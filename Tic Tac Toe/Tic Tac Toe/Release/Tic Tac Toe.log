@@ -1,0 +1,7 @@
+﻿  game.cpp
+  main.cpp
+  Generating code
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 142 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Tic Tac Toe.vcxproj -> C:\Users\McKay_000\source\repos\Tic Tac Toe\Release\Tic Tac Toe.exe
