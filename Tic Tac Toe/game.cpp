@@ -64,7 +64,7 @@ const int LEN_OF_SCOREBOARD = 21;
 
 //External Functions from main.cpp
 void displayInstructions();
-void waitForKeyPress(const char key, const string prompt);
+void waitForKeyPress(const char keyToPress, const string prompt);
 
 //Internal Functions
 void gameMasterLoop(const int numOfRounds, int& displayHelpCtr);

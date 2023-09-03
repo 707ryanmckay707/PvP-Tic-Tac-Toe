@@ -39,7 +39,7 @@ void updateMenuCursor(int input, int& cursorPos);
 int getMenuInput();
 void displayInstructions();
 int roundSelectorScreen();
-void waitForKeyPress(const char key, const string prompt);
+void waitForKeyPress(const char keyToPress, const string prompt);
 void printTitle();
 
 
@@ -212,7 +212,7 @@ int roundSelectorScreen()
 {
 	bool stillChoosing = true;
 	bool numOfRoundsSelected = true;
-	int numOfRounds = 3;
+	int numOfRounds = 3; // 3 is the number of rounds this screen defaults to
 
 	while (stillChoosing == true)
 	{
@@ -234,12 +234,12 @@ int roundSelectorScreen()
 		{
 		case UP_ARROW:
 		{
-			if((numOfRounds + 2) <= MAX_NUM_OF_ROUNDS)
+			if ((numOfRounds + 2) <= MAX_NUM_OF_ROUNDS)
 				numOfRounds += 2;
 		}
 			break;
 		case DOWN_ARROW:
-			if((numOfRounds - 2) >= MIN_NUM_OF_ROUNDS)
+			if ((numOfRounds - 2) >= MIN_NUM_OF_ROUNDS)
 			numOfRounds -= 2;
 			break;
 		case BACKSPACE:
@@ -264,16 +264,16 @@ int roundSelectorScreen()
 
 
 
-void waitForKeyPress(const char key, const string prompt)
+void waitForKeyPress(const char keyToPress, const string prompt)
 {
 	cout << prompt;
-	bool enterPressed = false;
+	bool keyPressed = false;
 	char input;
 	do {
 		input = _getch();
-		if (input == key)
-			enterPressed = true;
-	} while (enterPressed == false);
+		if (input == keyToPress)
+			keyPressed = true;
+	} while (keyPressed == false);
 }
 
 
