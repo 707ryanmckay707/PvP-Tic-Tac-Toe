@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{EB5C9AB2-0705-4380-A478-37C8AC10536C}</ProjectGuid>
-    <RootNamespace>TicTacToe</RootNamespace>
+    <RootNamespace>Tic-Tac-Toe</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
